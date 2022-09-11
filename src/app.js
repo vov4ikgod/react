@@ -6,7 +6,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 function App() {
     return (
         <BrowserRouter>
-            <Route path="/about" element={<About/>}/>
+            <Routes>
+                <Route path="/about" element={<About/>}/>
+            </Routes>
         </BrowserRouter>
     );
 }
