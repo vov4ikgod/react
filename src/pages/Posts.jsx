@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import PostService from "../API/PostService";
 import {usePosts} from "../hooks/usePosts";
 import {useFetching} from "../hooks/useFetching";
@@ -10,7 +10,6 @@ import PostList from "../components/PostList";
 import Loader from "../components/UI/Loader/Loader";
 import Pagination from "../components/UI/pagination/Pagination";
 import MyButton from '../components/UI/button/MyButton';
-import Post from '../components/Post';
 
 function Posts() {
     const [posts, setPosts] = useState([])

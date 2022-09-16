@@ -12,13 +12,16 @@ body {
 
 #root {
     display: flex;
-    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .App {
     width: 800px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .post {
@@ -39,8 +42,9 @@ form {
 }
 
 
-.post__btns {
+.post-btns {
     display: flex;
+    gap: 10px;
 }
 
 .post-enter {
@@ -76,4 +80,33 @@ form {
 .page-active {
     background-color: teal;
     color: #fff;
+}
+
+
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: lightgray;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: #000;
+}
+
+.error-page {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
